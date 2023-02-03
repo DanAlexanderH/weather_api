@@ -1,0 +1,103 @@
+body{
+    padding: 0%;
+    margin: 0%;
+}
+
+br {
+
+}
+
+.nav-bar{
+    background-color: rgb(67, 122, 177);
+    padding: 15px;
+}
+
+.nav-bar h1{
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+
+.nav-bar p {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.container-1{
+    display: flex;
+    flex-direction: column;
+}
+
+.search-container{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    /* border: 5px solid black; */
+}
+
+.search-container h2{
+    font-size: 45px;
+}
+
+#city-search{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 5px 5px 5px 5px;
+    margin-bottom: 25px;
+}
+
+#search-btn{
+    color: #fff;
+    font-size: 20px;
+    width: 100%;
+    height: 35px;
+    border-radius: 3px;
+    border: 1px solid rgb(59, 34, 71);
+    background-color: rgb(40, 85, 158);
+}
+
+#search-btn:hover {
+    height: 40px;
+    box-shadow: 10px 5px 5px rgb(112, 109, 109);
+}
+
+.result-btns{
+    display: flex;
+    flex-direction: column;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.city-btn {
+    width: 95%;
+    height: 35px;
+    margin: 10px;
+    color: rgb(35, 34, 34);
+    background-color: rgb(126, 122, 122);
+    font-size: 20px;
+    border-radius: 3px;
+}
+
+.city-btn:hover {
+    color: #fff;
+
+}
+
+.test {
+    border: 2px solid black;
+}
+
+@media screen and (min-width:1000px) {
+.main-container {
+    grid-template-columns: 30% 70%;
+}
+
+}
