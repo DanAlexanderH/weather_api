@@ -92,12 +92,39 @@ br {
 }
 
 .container-2 {
-    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: 15px;
 }
 
-.weatherEL {
-    font-weight: bold;
+.container-2 h2 {
+    font-size: 40px;
+    text-align: center;
 }
+
+.cityIcon-ctn{
+    display: flex;
+    margin: 20px;
+}
+
+#weatherTemp-text{
+    font-size: 20px;
+    margin: 20px;
+    
+}
+
+#humidity-text{
+    font-size: 20px;
+    margin: 20px;
+}
+
+#windspeed-text{
+    font-size: 20px;
+    margin: 20px;
+}
+
+
 
 @media screen and (min-width:1000px) {
 .main-container {
