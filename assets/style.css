@@ -124,6 +124,25 @@ br {
     margin: 20px;
 }
 
+.forecast-ctn {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.forecast-box {
+    background-color: rgb(77, 131, 202);
+    color: #fff;
+    border: 1px solid black;
+    padding: 15px;
+  
+}
+
+.forecast-box h2 {
+    padding: 20px;
+    text-align: start;
+
+}
+
 
 
 @media screen and (min-width:1000px) {
@@ -131,4 +150,5 @@ br {
     grid-template-columns: 30% 70%;
 }
 
-}
+};
+

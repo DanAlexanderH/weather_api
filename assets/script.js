@@ -7,6 +7,12 @@ var weatherTemptext= document.querySelector("#weatherTemp-text");
 var humidityText = document.querySelector("#humidity-text");
 var windSpeedText = document.querySelector("#windspeed-text");
 var cityIcon = document.querySelector("#icon");
+var forecastBox = document.querySelectorAll(".forecast-box");
+var forecast1 = document.querySelector("#forecast1");
+var forecast2 = document.querySelector("#forecast2");
+var forecast3 = document.querySelector("#forecast3");
+var forecast4 = document.querySelector("#forecast4");
+var forecast5 = document.querySelector("#forecast5");
 
 
 
@@ -17,7 +23,7 @@ function day() {
      header.innerHTML = date
 };
 
-// Fetches Open weather API
+// Fetches Open weather API for same day/hour weather
 var weatherAPI = function (){
     fetch('https://api.openweathermap.org/data/2.5/weather?q='+cityInput.value+'&units=imperial&appid=6b2fe1f5e9c799498a3cb8dcfcab7b18')
     .then (function(response){
@@ -40,6 +46,18 @@ var weatherAPI = function (){
     windSpeedText.innerHTML = "Wind: " + speed + " MPH";  
     cityIcon.src = "http://openweathermap.org/img/wn/" + icon + ".png";
 });
+// Fetches forecast for 5 days
+fetch('https://api.openweathermap.org/data/2.5/forecast?q='+cityInput.value+'&units=imperial&appid=6b2fe1f5e9c799498a3cb8dcfcab7b18')
+.then(function(response) {
+    return response.json()
+
+}) .then(function(data){
+    console.log(data);
+
+
+    
+
+})
 
 
 };
