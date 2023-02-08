@@ -48,6 +48,7 @@ br {
 }
 
 .search-container h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 45px;
 }
 
@@ -83,6 +84,7 @@ br {
 }
 
 .city-btn {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     width: 95%;
     height: 35px;
     margin: 10px;
@@ -105,6 +107,7 @@ br {
 }
 
 .container-2 h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 40px;
     text-align: center;
 }
@@ -115,18 +118,21 @@ br {
 }
 
 #weatherTemp-text{
-    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
     margin: 20px;
     
 }
 
 #humidity-text{
-    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
     margin: 20px;
 }
 
 #windspeed-text{
-    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
     margin: 20px;
 }
 
@@ -136,14 +142,17 @@ br {
 }
 
 .forecast-box {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: rgb(77, 131, 202);
     color: #fff;
     border: 1px solid black;
     padding: 15px;
     display: none;
+    font-size: 15px;
 }
 
 .forecast-box h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 20px;
     text-align: start;
 

@@ -9,6 +9,7 @@ const windSpeedText = document.querySelector("#windspeed-text");
 const cityIcon = document.querySelector("#icon");
 const forecastBox = [];
 const forecastDate = [];
+const forecastIcon = [];
 const forecastTemps = [];
 const forecastWindspeeds = [];
 const forecastHumidities = [];
@@ -22,6 +23,11 @@ forecastDate.push(document.getElementById('forecast-date-2'));
 forecastDate.push(document.getElementById('forecast-date-3'));
 forecastDate.push(document.getElementById('forecast-date-4'));
 forecastDate.push(document.getElementById('forecast-date-5'));
+forecastIcon.push(document.getElementById("forecast-icon-1"));
+forecastIcon.push(document.getElementById("forecast-icon-2"));
+forecastIcon.push(document.getElementById("forecast-icon-3"));
+forecastIcon.push(document.getElementById("forecast-icon-4"));
+forecastIcon.push(document.getElementById("forecast-icon-5"));
 forecastTemps.push(document.getElementById('forecast-temp-1'));
 forecastTemps.push(document.getElementById('forecast-temp-2'));
 forecastTemps.push(document.getElementById('forecast-temp-3'));
@@ -84,13 +90,14 @@ var fcIndex = 0;
 for(i = 0; i<data.list.length; i=i+8){
     forecastBox[fcIndex].style.display = "block";
      forecastDate[fcIndex].innerHTML = dayjs(data.list[i].dt_txt).format('MM/DD/YYYY');
+     forecastIcon[fcIndex].src = "http://openweathermap.org/img/wn/" + data.list[i].weather[0].icon + ".png";
      forecastTemps[fcIndex].innerHTML = data.list[i].main.temp + "°F";
      forecastHumidities[fcIndex].innerHTML = data.list[i].main.humidity + "%";
      forecastWindspeeds[fcIndex].innerHTML = data.list[i].wind.speed + " MPH";
 
     fcIndex++;
 };
-});
+}); 
 };
 
 
