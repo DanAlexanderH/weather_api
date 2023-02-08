@@ -21,7 +21,7 @@ This application is used to present the current weather for any city, as well as
 ## Installation
 <br>
 
-https://danalexanderh.github.io/
+https://danalexanderh.github.io/weather_api/
 
 <br>
 
